@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 2</title>
+</head>
+
+<style>
+
+body {
+  margin: 0;
+  background: #b0b0b7;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  padding: 30px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.number:hover {
+  scale: 1.5;
+}
+</style>
+<body>
+  <div id="numbers"></div>
+  <script src="script.js"></script>
+</body>
+</html>
